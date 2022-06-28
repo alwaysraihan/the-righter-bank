@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useSelector } from "react-redux";
 const Navbar = () => {
+    const amount = useSelector((state) => state.amount);
     return (
         <>
             <nav className="navbar navbar-expand-lg px-5 navbar-light bg-light">
@@ -79,7 +80,7 @@ const Navbar = () => {
                                 disabled={true}
                                 className="btn-primary rounded"
                             >
-                                Your Blance:0
+                                Your Blance:{amount}
                             </button>
                         </div>
                     </div>
