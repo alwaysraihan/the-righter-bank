@@ -74,20 +74,14 @@ const Navbar = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <form className="d-flex">
-                            <input
-                                className="form-control me-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
+                        <div>
                             <button
-                                className="btn btn-outline-success"
-                                type="submit"
+                                disabled={true}
+                                className="btn-primary rounded"
                             >
-                                Search
+                                Your Blance:0
                             </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </nav>
