@@ -1,16 +1,19 @@
 export const depositeMoney = (amount) => {
-    return (dispatch)=>{
+    return (dispatch) => {
         dispatch({
-            type:"deposite",
-            payload:amount
-        })
-    }
+            type: "deposite",
+            payload: amount,
+        });
+    };
 };
 export const withdrawMoney = (amount) => {
-    return (dispatch)=>{
+    return (dispatch) => {
         dispatch({
-            type:"withdraw",
-            payload:amount
-        })
-    }
+            type: "withdraw",
+            payload: amount,
+        });
+    };
 };
+
+const actionCreators = { depositeMoney, withdrawMoney };
+export default actionCreators;
